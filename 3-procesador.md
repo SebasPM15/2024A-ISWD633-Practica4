@@ -9,7 +9,12 @@ Asignar núcleos de CPU específicos:
 --cpuset-cpus=<lista de núcleos>
 ```
 
-**¿Como saber el numero de procesadores virtuales que tiene una máquina?**
+**¿Como saber el número de procesadores virtuales que tiene una máquina?**
+
+Se puede usar el comando nproc en sistemas Unix para conocer el número de procesadores virtuales disponibles en una máquina. Este comando devuelve el número de procesadores disponibles en el sistema. Puedes ejecutarlo en la terminal de la máquina en cuestión para obtener el número de núcleos de CPU virtuales. Ahora, en el caso de utilizar el Command Prompt (CMD) en Windows, puedes ejecutar el siguiente comando:
+```
+wmic cpu get NumberOfCores
+```
 
 ### Para crear y ejecutar los siguientes contenedores usar la imagen de nginx:alpine
 
